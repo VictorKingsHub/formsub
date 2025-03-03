@@ -3,11 +3,6 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import nodemailer from "nodemailer";
 
-interface ResponseData {
-  message?: string;
-  error?: string;
-}
-
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json();
